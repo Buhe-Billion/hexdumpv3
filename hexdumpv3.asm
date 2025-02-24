@@ -1,6 +1,6 @@
-;DESCRIPTION                :Witness the power of an %include
-;
-;
+;DESCRIPTION                : Witness the power of an %include
+;Architecture               : X86-64
+;CPU                        : Intel® Core™2 Duo CPU T6570 @ 2.10GHz × 2
 
 SECTION .text
 
