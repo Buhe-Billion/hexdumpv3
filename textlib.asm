@@ -24,6 +24,7 @@ EXIT_SYSCALL       EQU 60
 OK_RET_VAL         EQU 0
 EOF_VAL						 EQU 0
 
+HEXDIGITS: db "0123456789ABCDEF"
 
 DOTXLAT:
 DB 2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh,2Eh
@@ -134,4 +135,4 @@ LOADBUFF:
           POP RDX
           POP RAX
 
-          RET   
+          RET
