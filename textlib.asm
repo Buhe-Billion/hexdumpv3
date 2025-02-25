@@ -5,8 +5,8 @@
 SECTION .bss           ; Section containing uninitialised data
 
 BUFFLEN EQU 10h
-BUFF    RESB BUFFLEN
-
+BUFF    RESB BUFFLEN   ;Somehow this assembled and loaded and ran correctly without
+;BUFF having colons that define the label! z.B: BUFF: RESB BUFFLEN
 SECTION .data          ; Section containing initialised data
 
 DUMPLINE: DB  " 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "
