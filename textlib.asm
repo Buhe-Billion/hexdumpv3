@@ -7,6 +7,10 @@ SECTION .bss           ; Section containing uninitialised data
 BUFFLEN EQU 10h
 BUFF    RESB BUFFLEN   ;Somehow this assembled and loaded and ran correctly without
 ;BUFF having colons that define the label! z.B: BUFF: RESB BUFFLEN
+;I have since learnt that NASM will indeed accept labels ohne colons
+;But I think it best we don't get accustomed to that
+;since it seems it is widely preferred to include colons
+;and NASM may throw warnings if colons aren't included
 SECTION .data          ; Section containing initialised data
 
 DUMPLINE: DB  " 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 "
